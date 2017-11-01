@@ -10,9 +10,7 @@ tyrone = discord.Client()
 @tyrone.event
 async def on_ready():
     print('Connected')
-    print(tyrone.user.name)
-    print(tyrone.user.id)
     print('##########################')
 
 Window = Interface.GUI()
-tyrone.run("MzAwODczNTk0OTYyMDUxMDcz.DNqaGQ.U7Ygf7JhEhTaVKDOR1Cab5OMZ-k")
+tyrone.run("auth_token")
