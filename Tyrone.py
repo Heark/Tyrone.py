@@ -7,15 +7,21 @@ import Interface
 import asyncio
 
 tyrone = discord.Client()
-@tyrone.event
-async def on_ready():
-    print('Connected')
-    print('##########################')
 
 @tyrone.event
 async def on_message(message):
-    if message.content.startswith('!test'):
-       tyrone.send_message(message.channel, 'Hello! %s' % message.author)
+    if message.author == tyrone.user:
+        return
+
+    if (message.content.lower().startswith('hello')) or (message.content.lower().startswith('hi')) or (message.content.lower().startswith('hey')):
+        msg_txt = 'Hello {0.author.mention}'.format(message)
+        await tyrone.send_message(message.channel, msg_txt)
+
+
+@tyrone.event
+async def on_ready():
+    print('Connected')
+
 
 Window = Interface.GUI()
 tyrone.run("auth_token")
