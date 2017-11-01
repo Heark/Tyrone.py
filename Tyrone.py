@@ -3,7 +3,6 @@
 
 import discord
 import logging
-import Interface
 import asyncio
 
 tyrone = discord.Client()
@@ -21,8 +20,3 @@ async def on_message(message):
 @tyrone.event
 async def on_ready():
     print('Connected')
-
-
-Window = Interface.GUI()
-tyrone.run("auth_token")
-
