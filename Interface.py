@@ -2,6 +2,7 @@
 # GUI Code
 import tkinter
 import sys
+import Tyrone as Main
 import threading
 
 class GUI(threading.Thread):
@@ -13,6 +14,7 @@ class GUI(threading.Thread):
         self.WINDOW.quit()
     def End_Tyrone(self):
         print("Closing Tyrone")
+        Main.tyrone.close()
         sys.exit()
 
 
@@ -24,3 +26,6 @@ class GUI(threading.Thread):
 
         Exit_button.pack()
         self.WINDOW.mainloop()
+
+Window = GUI()
+Main.tyrone.run("token")
