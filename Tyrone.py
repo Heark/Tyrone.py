@@ -1,5 +1,5 @@
 # Tyrone in Python
-# Created By Antwaun Tune
+# Created By Aj
 
 import discord
 import logging
