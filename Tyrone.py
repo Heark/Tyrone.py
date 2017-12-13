@@ -16,7 +16,7 @@ async def on_message(message):
         msg_txt = 'Hello {0.author.mention}'.format(message)
         await tyrone.send_message(message.channel, msg_txt)
 
-
 @tyrone.event
 async def on_ready():
     print('Connected')
+    await tyrone.send_message(message.channel, "online")
