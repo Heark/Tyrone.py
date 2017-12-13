@@ -28,4 +28,4 @@ class GUI(threading.Thread):
         self.WINDOW.mainloop()
 
 Window = GUI()
-Main.tyrone.run("MzAwODczNTk0OTYyMDUxMDcz.DRJ1qQ.alcoIqu19idpANf8dYZVEeapQsg")
+Main.tyrone.run("MzkwNDY3MTk3MTUzMzEyNzY4.DRKipg.js4mXr22rYdgduS_CyZ71ucw0TU")
