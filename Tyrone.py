@@ -19,4 +19,4 @@ async def on_message(message):
 @tyrone.event
 async def on_ready():
     print('Connected')
-    await tyrone.logout
+    await tyrone.logout()
